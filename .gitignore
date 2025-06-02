@@ -1,0 +1,18 @@
+# Node / React
+node_modules/
+build/
+.venv
+.DS_Store
+
+# Django
+*.py[cod]
+__pycache__/
+*.sqlite3
+venv/           
+*.log
+
+# VSCode
+.vscode/
+
+# Mac OS
+.DS_Store
