@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button'
-import { useAuthStore } from '../../Store'  // named import
+import { useAuthStore } from '../../Store'
 
 const LandingPage = () => {
   // Παίρνουμε username, token, και τη συνάρτηση logout() από το Zustand store
@@ -10,7 +10,7 @@ const LandingPage = () => {
   const logout = useAuthStore((state) => state.logout)
   const navigate = useNavigate()
 
-  // Αν το token γίνει null (π.χ. μετά από logout), κάνουμε redirect στο /Login
+  // Αν το token γίνει null  κάνουμε redirect στο /Login
   useEffect(() => {
     if (!token) {
       navigate('/Login')

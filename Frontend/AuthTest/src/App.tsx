@@ -19,9 +19,6 @@ function App() {
 
             <Route path="/LandingPage" element={<LandingPage />} />
 
-
-            <Route path="/LandingPage" element={<LandingPage />} />
-
           </Route>
 
 

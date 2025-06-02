@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-import api from './api'       // το axios instance που ήδη έχεις
+import api from './api'
 
 interface User {
   id: number
@@ -82,4 +82,3 @@ export const useAuthStore = create<AuthState>((set) => ({
 
   clearError: () => set({ error: null }),
 }))
-    
